@@ -8,7 +8,7 @@ def conexao(con, cli):
     print('Client: ', cli)
 
     while True:
-        sentence = con.recv(1024).decode()
+        sentence = con.recv(2048).decode()
         if not sentence:
             break
         capSen = sentence.upper()
